@@ -1,7 +1,75 @@
-body {
-    margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unlock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+:root {
+  --russo-one: "Russo One", sans-serif;
+  --unlock: "Unlock", cursive;
+  --roboto-medium: "Roboto", sans-serif;
 }
 
-h1 {
-    color: red;
+body {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  background-color: #3c474f;
+}
+
+.container-portfolio {
+  margin: 0 auto;
+  height: 100%;
+  background-image: url("./assets//images/right-bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100%;
+}
+
+.header-portfolio {
+  height: 16.5%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #acacac;
+  font-family: var(--roboto-medium);
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #f7c915;
+}
+
+.nav-title {
+  font-size: 2.5rem;
+  font-family: var(--unlock);
+  color: #ffffff;
+  margin-left: 1em;
+}
+
+#title-dot {
+  color: #f7c915;
+}
+
+.content-portfolio {
+  height: calc(100% - 16.5%);
 }
